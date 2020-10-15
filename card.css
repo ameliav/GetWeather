@@ -1,0 +1,40 @@
+.dark.card>.content>a.header, .content>a.header {
+    color: white;
+    background: black;
+}
+
+/*
+.dark.card>.content>.header, .content>.header {
+    color: white;
+}
+*/
+
+.dark.card>.content>.description, .content>.description {
+    clear: both;
+    color: white;
+    background: grey;
+}
+
+.dark.card>.content>a.header:hover, .content>a.header:hover {
+    color: blue;
+}
+
+.customcard {
+    transition: .2s;
+}
+
+.customcardlist {
+    display: flex;
+}
+
+.customcard:hover {
+    transform: translateY(-1rem);
+}
+
+.customcard:hover~.card {
+    transform: translateX(130px);
+}
+
+.customcard:not(:first-child) {
+    margin-left: -130px;
+}
