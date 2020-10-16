@@ -52,7 +52,7 @@ class WeatherAPI extends React.Component {
             (err) => {
                 //console.log("No coordinates yet "+err );
                 this.setState({noLocMsg: "Default location", errorMessage: err});
-                this.getAPIresponse(38.9072, 77.0369);
+                this.getAPIresponse(38.889248, -77.050636);
             }
         )
     };
